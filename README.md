@@ -4,17 +4,7 @@ This repository contains a complete, well-documented workflow to preprocess, ana
 
 ## Files
 - `ABC_Employee_Analysis.ipynb` — Main Jupyter Notebook with all analysis and plots.
-- `data/` — Place your dataset file here (CSV or Excel). Example: `data/abc_employees.csv` or `data/abc_employees.xlsx`.
-- `requirements.txt` — Python packages required to run the notebook.
-
-## How to Run
-1. Create and activate a virtual environment (optional but recommended).
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Put your dataset in the `data/` folder (CSV or Excel). Update the `DATA_FILE` variable in the first cell of the notebook if needed.
-4. Open and run `ABC_Employee_Analysis.ipynb` **top to bottom**.
+- `ABC_Company_cleaned` — Used this Dataset for analysis
 
 ## Assumed Columns
 The notebook expects these columns (case-insensitive):
@@ -23,9 +13,7 @@ The notebook expects these columns (case-insensitive):
 - `age`
 - `salary`
 - `height`
-
-If your column names differ slightly (e.g., `Team Name`), the notebook includes a flexible matcher to help map them.
-
+  
 ## What the Notebook Does
 ### Preprocessing (1 mark)
 - Validates schema and data types.
@@ -39,7 +27,7 @@ If your column names differ slightly (e.g., `Team Name`), the notebook includes 
 
 2. **Segregate employees by position** (2 marks)  
    - Distribution of employees across positions.
-   - Bar chart.
+   - Bar chart and Pie Chart
 
 3. **Predominant age group** (2 marks)  
    - Age binned into groups: `<25`, `25–34`, `35–44`, `45–54`, `55+`.
@@ -51,6 +39,7 @@ If your column names differ slightly (e.g., `Team Name`), the notebook includes 
 
 5. **Correlation between age and salary** (2 marks)  
    - Pearson correlation coefficient.
+   - use heat map more finding Correlation 
    - Scatter plot with a simple best-fit line.
 
 ### Graphical Representation (10 marks)
@@ -67,14 +56,7 @@ Notebook is structured for easy execution and export. Commit the notebook, datas
 abc-employee-analysis/
 ├─ ABC_Employee_Analysis.ipynb
 ├─ README.md
-├─ requirements.txt
-└─ data/
-   └─ abc_employees.csv  # or .xlsx
+├─ ABC_Company_cleaned
+├─ Team_distribution
+├─ ABC_Company
 ```
-
-## Tips
-- If your dataset file is Google Sheets, export it as CSV first:
-  - **File → Download → Comma Separated Values (.csv)**, then place it in `data/`.
-- If you run into missing values or unexpected types, see the "Data Quality Checks" cell in the notebook.
-
-Good luck!
