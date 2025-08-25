@@ -18,7 +18,7 @@ The notebook expects these columns (case-insensitive):
 ### Preprocessing (1 mark)
 - Validates schema and data types.
 - Replaces the `height` column with random integers between 150 and 180 (inclusive), using a fixed random seed for reproducibility.
-- Writes out a cleaned copy: `data/abc_employees_clean.csv`.
+- Writes out a cleaned copy: `abc_employees_clean.csv`.
 
 ### Analysis Tasks
 1. **Team distribution + percentage split** (2 marks)  
