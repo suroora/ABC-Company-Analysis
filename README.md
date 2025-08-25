@@ -30,7 +30,7 @@ The notebook expects these columns (case-insensitive):
    - Bar chart and Pie Chart
 
 3. **Predominant age group** (2 marks)  
-   - Age binned into groups: `<25`, `25–34`, `35–44`, `45–54`, `55+`.
+   - Age binned into groups: `[10, 20, 30, 40,50]`.
    - Bar chart highlighting the largest group.
 
 4. **Highest salary expenditure (team & position)** (2 marks)  
